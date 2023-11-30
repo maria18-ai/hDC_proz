@@ -13,7 +13,7 @@ NODE JS
 
 Para clonar o repositorio, basta copiar a URL no botão code do github: 
 
-![INSTA](https://github.com/maria18-ai/insta_clone/assets/131560480/0430735e-659b-4483-a459-0a84069adc81)
+![HDCHOSTLINKCLONE](https://github.com/maria18-ai/hDC_proz/assets/131560480/697f6b95-6643-4433-971d-64894ef27f77)
 
 
 Depois disso, basta dar o comando git clone no terminal com a URL copiada: 
