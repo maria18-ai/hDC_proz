@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+.navbar_container {
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar_items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar_items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar_items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar_items a:hover {
+    color: #888;
+}
+
+.default_btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navbar_items .default_btn:hover {
+    background-color: #22bb4f;
+    color: #fff;
+}
+
+/* popup */
+.popup_wrapper {
+    display: none;
+    background: rgba(0 , 0 , 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background:#fff;
+    position: relative;
+}
+
+/* form popup */
+
+.popup_wrapper {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+    z-index: 1;
+}
+
+
+#form_PopUp p {
+    padding-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#form_PopUp input {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin: 0 10px 20px;
+}
+
+#btn_cadastro {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.202);
+    font-size: 15px;
+}
+
+.popup_close {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.202);
+}
+
+
+.price_container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.price_container h2 {
+    font-size: 36px;
+}
+
+.price_container p {
+    font-size: 20px;
+}
+
+.plans_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc762;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan_name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding: 50px 0;
+}
+
+.plan .plan_btn {
+    background-color: #2cc762;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .recommended {
+    background-color: #f45c57;
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100px*/
+@media (max-width: 1110px) {
+    
+    .plans_container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+
+
+}
+
+/* tablet */
+@media (max-width: 900px) {
+    .main_banner p {
+        padding: 0 6rem;
+    }
+
+    .searchdomain_container {
+        padding: 2rem 4rem;
+    }
+}
+
+/* celular */
+@media (max-width: 576px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .navbar_items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main_banner p {
+        padding: 0 3rem;
+    }
+
+    .services_container ul {
+        flex-direction: column;
+    }
+
+    .plans_container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact_container {
+        padding: 3rem 2rem;
+    }
+
+    .contact_container input,
+    .contact_container ::target-text {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .searchdomain_container h2 {
+        font-size: 28px;
+    }
+    
+    .searchdomain_container input[type="text"] {
+        width: 100%;
+    }
+}

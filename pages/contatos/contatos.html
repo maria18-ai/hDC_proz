@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="contatos.js" defer></script>
+    <link rel="stylesheet" href="../../css/contatos.css">
+    <title>hDC - Contato</title>
+</head>
+<body>
+
+    <!-- barra de navegação -->
+    <div class="container">
+        <div class="navbar_container">
+            <nav>
+                <a href="#">
+                    <img src="../../image/hdchostlogo (1).png" alt="hDC Host" class="logo">
+                </a>
+
+                <ul class="navbar_items">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="../precos/precos.html">Preços</a>
+                    </li>
+
+                    <li>
+                        <a href="../contatos/contatos.html">Contato</a>
+                    </li>
+
+                    <li>
+                        <input type="button" class="default_btn" value="Entrar" id="button">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- seção do popUp -->
+        <div class="popup_wrapper"> 
+            <div class="popup">
+
+                <div class="popup_content">
+                    
+                    <form id="form_PopUp">
+                        <p>Faça seu cadastro!</p>
+                        
+                        <input type="text" name="name" id="name" placeholder="Seu nome">
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                        <button id="btn_cadastro">Cadastrar</button>
+                    </form> 
+
+                    <div class="popup_close">Sair</div>
+                
+                </div>      
+            </div>
+        </div>
+
+        <!-- formulário para contato -->
+    <section class="contact_container">
+        <h2>Mande uma mensagem</h2>
+        <p>Envie a sua mensagem, em até 4 horas um especialista entrará em contato</p>
+        <form id="myForm">
+            <input type="text" name="name" id="name" placeholder="Seu nome">
+            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+            <textarea name="message" id="message" placeholder="Descreva o que você precisa ou o seu projeto..."></textarea>
+            <input id="btn_input"  type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <div id="mensage"></div>
+</body>
+</html>

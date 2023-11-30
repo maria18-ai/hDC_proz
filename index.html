@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="popup.js" defer></script>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>hDC Host</title>
+</head>
+<body>
+    <!-- barra de navegação -->
+    <div class="container">
+        <div class="navbar_container">
+            <nav>
+                <a href="#">
+                    <img src="image/hdchostlogo (1).png" alt="hDC Host" class="logo">
+                </a>
+
+                <ul class="navbar_items">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="pages/precos/precos.html">Preços</a>
+                    </li>
+
+                    <li>
+                        <a href="pages/contatos/contatos.html">Contato</a>
+                    </li>
+
+                    <li>
+                        <input type="button" class="default_btn" value="Entrar" id="button">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- area do popUp -->
+
+        <div class="popup_wrapper"> 
+            <div class="popup">
+                <div class="popup_content">               
+                    <form id="form_PopUp">
+                        <p>Faça seu cadastro!</p>                     
+                        <input type="text" name="name" id="name" placeholder="Seu nome">
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                        <button id="btn_cadastro">Cadastrar</button>
+                    </form> 
+                    <div class="popup_close">Sair</div>
+                </div>      
+            </div>
+        </div>
+
+        <!-- conteúdo principal do site -->
+        <main>
+            <div class="main_banner">
+                <h1>hDC Host</h1>
+                <p>Os melhores serviços para projetos de todos os tamanhos!</p>
+            </div>
+            <section class="services_container">
+                <ul>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Segurança</h3>
+                        <p>No hDC Host temos a segurança necessária para o seu site! Nossos planos oferecem recurso de segurança completa para a sua aplicação.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <h3>Performance</h3>
+                        <p>A nossa empresa oferece 4 planos de pagamentos mensais com performances de alta qualidade para o seu projeto. <br>
+                            Então não se preocupe! Nossos serviços são do tamanho das suas ideias.
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-comments"></i>
+                        <h3>Suporte 24/7</h3>
+                        <p>Seu site caiu? Não entre em pânico! a hDC Host tem um suporte ao cliente 24/7 para qualquer tipo de impecilio. <br>
+                            Com serviços de SAC, e-mail e até mesmo nosso chat WhatsApp.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- search para procurar dominios desejados -->
+
+            <section class="searchdomain_container">
+                <h2>Qual domínio você quer para o seu site?</h2>
+                <p>Verifique se o domínio está disponível</p>
+                <form>
+                    <input type="text" name="domain" id="domain" placeholder="Digite o domínio desejado">
+                    <input type="submit" value="Procurar domínio">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>hDC Host @ 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
