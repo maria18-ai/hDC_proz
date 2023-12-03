@@ -2,7 +2,7 @@
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    const nameUser = document.getElementById('name').value;
+    const nameUser = document.getElementById('nameUser').value;
     userMensage = alert(`Sua mensagem foi enviado com sucesso senhor(a)
     ${nameUser}`);
 
