@@ -32,5 +32,6 @@ Depois disso, basta dar o comando git clone no terminal com a URL copiada:
 - Incrementar um backend para guardar as informações dos usuários.
 - Implementar uma API para pesquisa das hospedagens.
 
+url gitpages: https://maria18-ai.github.io/hDC_proz/
 
 Feito com ❤ por Maria
