@@ -1,6 +1,6 @@
 # hDC Host Proz
 
-Um update do projeto hDC Host para o projeto do modúlo de Front-End, da escola técnica Proz Educação.
+Um update do projeto hDC Host da Udemy para o projeto do modúlo de Front-End, da escola técnica Proz Educação.
 
 
 ## 🖱 Ferramentas necessárias para clonagem
